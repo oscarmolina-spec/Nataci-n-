@@ -67,159 +67,146 @@ const LISTA_CURSOS = [
 // ==========================================
 const OFERTA_ACTIVIDADES = [
   {
-    id: 'chapoteo',
-    nombre: '🚼 Chapoteo (16:00 - 17:00)',
-    cursos: ['INF3', 'INF4', 'INF5'],
-    requierePrueba: false,
-    diasResumen: 'L, M, X, J o V',
-    precioResumen: '45€/mes',
-    descripcion: '💧 Actividad de iniciación al medio acuático para Infantil.\n🎲 Juegos en el agua para disfrutar, familiarizarse y perder el miedo.\n⏰ Horario fijo: 16:00 - 17:00.',
-    aviso: '⚠️ Mínimo 5 alumnos para abrir grupo.',
+    id: 'chapoteo', 
+    nombre: '🚼 Chapoteo (Infantil)', 
+    cursos: ['INF3', 'INF4', 'INF5'], 
+    requierePrueba: false, 
+    diasResumen: 'L-V', 
+    precioResumen: '45€', 
+    descripcion: 'Iniciación y familiarización con el medio acuático. El monitor está dentro del agua para mayor seguridad y confianza.\n\n⬇️ HORARIOS ⬇️\n• 1 día/sem (45€): Lunes a Viernes (16:00-17:00).', 
+    aviso: 'Mínimo 5 alumnos.',
     opciones: [
-      { dias: 'Lunes', horario: '16:00 - 17:00', precio: '45€/mes' },
-      { dias: 'Martes', horario: '16:00 - 17:00', precio: '45€/mes' },
-      { dias: 'Miércoles', horario: '16:00 - 17:00', precio: '45€/mes' },
-      { dias: 'Jueves', horario: '16:00 - 17:00', precio: '45€/mes' },
-      { dias: 'Viernes', horario: '16:00 - 17:00', precio: '45€/mes' },
-    ],
+        { dias: 'Lunes', horario: '16:00-17:00', precio: '45€' },
+        { dias: 'Martes', horario: '16:00-17:00', precio: '45€' },
+        { dias: 'Miércoles', horario: '16:00-17:00', precio: '45€' },
+        { dias: 'Jueves', horario: '16:00-17:00', precio: '45€' },
+        { dias: 'Viernes', horario: '16:00-17:00', precio: '45€' }
+    ]
   },
   {
-    id: 'primaria_1615',
-    nombre: '🏅 Natación Primaria (16:15 - 17:15)',
-    cursos: ['1PRI', '2PRI', '3PRI', '4PRI', '5PRI', '6PRI'],
-    requierePrueba: true,
-    diasResumen: 'L-X, M-J o sueltos',
-    precioResumen: 'Desde 45€',
-    descripcion: '🏊 Para alumnos de 1º a 6º de Primaria.\n🎯 Trabajo por niveles, con objetivos técnicos y recreativos.\n⏰ Recogida 16:15 en portón azul. Salida 17:15.',
-    aviso: '⚠️ Mínimo 6 alumnos por grupo.',
+    id: 'primaria_1615', 
+    nombre: '🏅 Natación Primaria (16:15)', 
+    cursos: ['1PRI', '2PRI', '3PRI', '4PRI', '5PRI', '6PRI'], 
+    requierePrueba: true, 
+    diasResumen: 'L-V', 
+    precioResumen: '45€ / 65€', 
+    descripcion: 'Desarrollo de estilos y técnica. Se divide en subgrupos por nivel. Ideal para perfeccionar la natación.\n\n⬇️ ELIGE TU OPCIÓN ⬇️\n⭐ PACK 2 DÍAS (65€): L/X o M/J.\n⭐ DÍA SUELTO (45€): L, M, X, J o V.', 
+    aviso: 'Mínimo 6 alumnos.',
     opciones: [
-      { dias: 'Lunes y Miércoles', horario: '16:15 - 17:15', precio: '65€/mes' },
-      { dias: 'Martes y Jueves', horario: '16:15 - 17:15', precio: '65€/mes' },
-      { dias: 'Solo Lunes', horario: '16:15 - 17:15', precio: '45€/mes' },
-      { dias: 'Solo Martes', horario: '16:15 - 17:15', precio: '45€/mes' },
-      { dias: 'Solo Miércoles', horario: '16:15 - 17:15', precio: '45€/mes' },
-      { dias: 'Solo Jueves', horario: '16:15 - 17:15', precio: '45€/mes' },
-      { dias: 'Solo Viernes', horario: '16:15 - 17:15', precio: '45€/mes' },
-    ],
+        { dias: '[PACK 2 DÍAS] Lunes y Miércoles', horario: '16:15-17:15', precio: '65€' },
+        { dias: '[PACK 2 DÍAS] Martes y Jueves', horario: '16:15-17:15', precio: '65€' },
+        { dias: '[1 DÍA] Lunes', horario: '16:15-17:15', precio: '45€' },
+        { dias: '[1 DÍA] Martes', horario: '16:15-17:15', precio: '45€' },
+        { dias: '[1 DÍA] Miércoles', horario: '16:15-17:15', precio: '45€' },
+        { dias: '[1 DÍA] Jueves', horario: '16:15-17:15', precio: '45€' },
+        { dias: '[1 DÍA] Viernes', horario: '16:15-17:15', precio: '45€' }
+    ]
   },
   {
-    id: 'waterpolo',
-    nombre: '🤽‍♂️ Waterpolo (17:30 - 18:30)',
-    cursos: ['3PRI', '4PRI', '5PRI', '6PRI'],
-    requierePrueba: false,
-    diasResumen: 'L-X o V',
-    precioResumen: 'Desde 45€',
-    descripcion: '💦 Iniciación al waterpolo adaptada a cada edad.\n⚽ Trabajo en equipo, lanzamientos y diversión garantizada.\n⏰ Horario fijo: 17:30 - 18:30.',
-    aviso: '⚠️ Mínimo 7 alumnos para formar equipo.',
+    id: 'primaria_123_tarde', 
+    nombre: '🐟 Natación 1º-3º Prim (17:30)', 
+    cursos: ['1PRI', '2PRI', '3PRI'], 
+    requierePrueba: true, 
+    diasResumen: 'L-V', 
+    precioResumen: '37€ / 50€', 
+    descripcion: 'Sesiones breves, dinámicas y muy seguras para avanzar en autonomía acuática. Grupos reducidos.\n\n⬇️ ELIGE TU OPCIÓN ⬇️\n⭐ PACK 2 DÍAS (50€): L/X o M/J.\n⭐ DÍA SUELTO (37€): Cualquier día.', 
+    aviso: 'Mínimo 4 alumnos.',
     opciones: [
-      { dias: 'Lunes y Miércoles', horario: '17:30 - 18:30', precio: '60€/mes' },
-      { dias: 'Solo Lunes', horario: '17:30 - 18:30', precio: '45€/mes' },
-      { dias: 'Solo Miércoles', horario: '17:30 - 18:30', precio: '45€/mes' },
-      { dias: 'Solo Viernes', horario: '17:30 - 18:30', precio: '45€/mes' },
-    ],
+        { dias: '[PACK 2 DÍAS] Lunes y Miércoles', horario: '17:30-18:00', precio: '50€' },
+        { dias: '[PACK 2 DÍAS] Martes y Jueves', horario: '17:30-18:00', precio: '50€' },
+        { dias: '[1 DÍA] Lunes', horario: '17:30-18:00', precio: '37€' },
+        { dias: '[1 DÍA] Martes', horario: '17:30-18:00', precio: '37€' },
+        { dias: '[1 DÍA] Miércoles', horario: '17:30-18:00', precio: '37€' },
+        { dias: '[1 DÍA] Jueves', horario: '17:30-18:00', precio: '37€' },
+        { dias: '[1 DÍA] Viernes', horario: '17:30-18:00', precio: '37€' }
+    ]
   },
   {
-    id: 'adultos',
-    nombre: '👨‍👩‍👧 Adultos (Horario Variable)',
-    cursos: ['ADULTO'],
-    requierePrueba: false,
-    diasResumen: 'L-X-V (18:00) | M-J (18:30)',
-    precioResumen: 'Desde 37€',
-    descripcion: '✨ Clases para adultos que quieran mantenerse activos o mejorar su estilo.\n🕓 Lunes, Miércoles, Viernes: 18:00 - 18:30.\n🕕 Martes, Jueves: 18:30 - 19:00.',
-    aviso: '⚠️ Mínimo 4 alumnos.',
+    id: 'primaria_456_tarde', 
+    nombre: '🏊 Natación 4º-6º Prim (Mixto)', 
+    cursos: ['4PRI', '5PRI', '6PRI'], 
+    requierePrueba: true, 
+    diasResumen: 'L-V', 
+    precioResumen: '37€ / 50€', 
+    descripcion: 'Para quienes quieren seguir mejorando técnica y condición física. Ideal como complemento a otras actividades deportivas.\n\n⬇️ ELIGE TU OPCIÓN ⬇️\n⭐ PACK 2 DÍAS (50€).\n⭐ DÍA SUELTO (37€).\n(L-X-V es 1h | M-J es 30min).', 
+    aviso: 'Mínimo 4 alumnos.',
     opciones: [
-      { dias: 'Lunes y Miércoles', horario: '18:00 - 18:30', precio: '50€/mes' },
-      { dias: 'Martes y Jueves', horario: '18:30 - 19:00', precio: '50€/mes' },
-      { dias: 'Solo Lunes', horario: '18:00 - 18:30', precio: '37€/mes' },
-      { dias: 'Solo Martes', horario: '18:30 - 19:00', precio: '37€/mes' },
-      { dias: 'Solo Miércoles', horario: '18:00 - 18:30', precio: '37€/mes' },
-      { dias: 'Solo Jueves', horario: '18:30 - 19:00', precio: '37€/mes' },
-      { dias: 'Solo Viernes', horario: '18:00 - 18:30', precio: '37€/mes' },
-    ],
+        { dias: '[PACK 2 DÍAS] Lunes (1h) y Miércoles (1h)', horario: '17:30-18:30', precio: '50€' },
+        { dias: '[PACK 2 DÍAS] Martes (30m) y Jueves (30m)', horario: '18:00-18:30', precio: '50€' },
+        { dias: '[1 DÍA] Lunes', horario: '17:30-18:30', precio: '37€' },
+        { dias: '[1 DÍA] Martes', horario: '18:00-18:30', precio: '37€' },
+        { dias: '[1 DÍA] Miércoles', horario: '17:30-18:30', precio: '37€' },
+        { dias: '[1 DÍA] Jueves', horario: '18:00-18:30', precio: '37€' },
+        { dias: '[1 DÍA] Viernes', horario: '17:30-18:30', precio: '37€' }
+    ]
   },
   {
-    id: 'niveles_123',
-    nombre: '🐟 Natación 1º-3º PRI (17:30 - 18:00)',
-    cursos: ['1PRI', '2PRI', '3PRI'],
-    requierePrueba: true,
-    diasResumen: 'L-X, M-J o sueltos',
-    precioResumen: 'Desde 37€',
-    descripcion: '🧒 Sesiones breves, dinámicas y muy seguras para avanzar en autonomía acuática.\n⏰ Horario fijo: 17:30 - 18:00.',
-    aviso: '⚠️ Mínimo 4 alumnos.',
+    id: 'waterpolo', 
+    nombre: '🤽‍♂️ Waterpolo', 
+    cursos: ['3PRI', '4PRI', '5PRI', '6PRI'], 
+    requierePrueba: false, 
+    diasResumen: 'L-V', 
+    precioResumen: '45€ / 60€', 
+    descripcion: 'Iniciación al waterpolo. Deporte de equipo, balón y natación. Fomenta el compañerismo.\n\n⬇️ ELIGE TU OPCIÓN ⬇️\n⭐ PACK 2 DÍAS (60€): L/X o M/J.\n⭐ DÍA SUELTO (45€): L, M, X, J o V.', 
+    aviso: 'Mínimo 7 alumnos.',
     opciones: [
-      { dias: 'Lunes y Miércoles', horario: '17:30 - 18:00', precio: '50€/mes' },
-      { dias: 'Martes y Jueves', horario: '17:30 - 18:00', precio: '50€/mes' },
-      { dias: 'Solo Lunes', horario: '17:30 - 18:00', precio: '37€/mes' },
-      { dias: 'Solo Martes', horario: '17:30 - 18:00', precio: '37€/mes' },
-      { dias: 'Solo Miércoles', horario: '17:30 - 18:00', precio: '37€/mes' },
-      { dias: 'Solo Jueves', horario: '17:30 - 18:00', precio: '37€/mes' },
-      { dias: 'Solo Viernes', horario: '17:30 - 18:00', precio: '37€/mes' },
-    ],
+        { dias: '[PACK 2 DÍAS] Lunes y Miércoles', horario: '17:30-18:30', precio: '60€' },
+        { dias: '[PACK 2 DÍAS] Martes y Jueves', horario: '17:30-18:30', precio: '60€' },
+        { dias: '[1 DÍA] Lunes', horario: '17:30-18:30', precio: '45€' },
+        { dias: '[1 DÍA] Martes', horario: '17:30-18:30', precio: '45€' },
+        { dias: '[1 DÍA] Miércoles', horario: '17:30-18:30', precio: '45€' },
+        { dias: '[1 DÍA] Jueves', horario: '17:30-18:30', precio: '45€' },
+        { dias: '[1 DÍA] Viernes', horario: '17:30-18:30', precio: '45€' }
+    ]
   },
   {
-    id: 'niveles_456',
-    nombre: '🏊 Natación 4º-6º PRI',
-    cursos: ['4PRI', '5PRI', '6PRI'],
-    requierePrueba: true,
-    diasResumen: 'Varía según día',
-    precioResumen: 'Desde 37€',
-    descripcion: '🚀 Para quienes quieren seguir mejorando técnica y condición física. \n🕓 L-X-V: 17:30 - 18:30 (1 hora). \n🕕 M-J: 18:00 - 18:30 (30 min).',
-    aviso: '⚠️ Mínimo 4 alumnos.',
+    id: 'aquagym', 
+    nombre: '💧 Aquagym (+16 años)', 
+    cursos: ['ADULTO', '1BACH', '2BACH'], 
+    requierePrueba: false, 
+    diasResumen: 'M y J', 
+    precioResumen: '50€', 
+    descripcion: 'Actividad de bajo impacto ideal para mantenerse en forma sin sobrecargar articulaciones. Mejora la movilidad y el tono muscular.\n\n⬇️ HORARIOS ⬇️\n• PACK 2 DÍAS (50€): Martes y Jueves (17:30-18:15).', 
+    aviso: 'Mínimo 5 alumnos.',
     opciones: [
-      { dias: 'Lunes y Miércoles', horario: '17:30 - 18:30', precio: '50€/mes' },
-      { dias: 'Martes y Jueves', horario: '18:00 - 18:30', precio: '50€/mes' },
-      { dias: 'Solo Lunes', horario: '17:30 - 18:30', precio: '37€/mes' },
-      { dias: 'Solo Martes', horario: '18:00 - 18:30', precio: '37€/mes' },
-      { dias: 'Solo Miércoles', horario: '17:30 - 18:30', precio: '37€/mes' },
-      { dias: 'Solo Jueves', horario: '18:00 - 18:30', precio: '37€/mes' },
-      { dias: 'Solo Viernes', horario: '17:30 - 18:30', precio: '37€/mes' },
-    ],
+        { dias: '[PACK] Martes y Jueves', horario: '17:30-18:15', precio: '50€' }
+    ]
   },
   {
-    id: 'eso_bach',
-    nombre: '🎓 ESO y Bachillerato',
-    cursos: ['1ESO', '2ESO', '3ESO', '4ESO', '1BACH', '2BACH'],
-    requierePrueba: true,
-    diasResumen: 'L-X o V',
-    precioResumen: 'Desde 37€',
-    descripcion: '🧠 Sesiones específicas para adolescentes, con técnica, mantenimiento o preparación física.\n🌙 Tardes: Lunes/Miércoles 18:30 - 19:00.\n☀️ Mediodía: Viernes 14:15 - 15:00.',
-    aviso: '⚠️ Mínimo 4 alumnos.',
+    id: 'adultos', 
+    nombre: '👨‍👩‍👧 Adultos', 
+    cursos: ['ADULTO'], 
+    requierePrueba: false, 
+    diasResumen: 'L-V', 
+    precioResumen: '37€ / 50€', 
+    descripcion: 'Clases para adultos que quieran mantenerse activos o mejorar su estilo.\n\n⬇️ ELIGE TU OPCIÓN ⬇️\n⭐ PACK 2 DÍAS (50€): L/X o M/J.\n⭐ DÍA SUELTO (37€): Cualquier día.\n(Horarios variables según el día).', 
+    aviso: 'Mínimo 4 alumnos.',
     opciones: [
-      { dias: 'Lunes y Miércoles', horario: '18:30 - 19:00', precio: '50€/mes' },
-      { dias: 'Solo Lunes', horario: '18:30 - 19:00', precio: '37€/mes' },
-      { dias: 'Solo Miércoles', horario: '18:30 - 19:00', precio: '37€/mes' },
-      { dias: 'Solo Viernes (Mediodía)', horario: '14:15 - 15:00', precio: '37€/mes' },
-    ],
+        { dias: '[PACK 2 DÍAS] Lunes y Miércoles', horario: '18:00-18:30', precio: '50€' },
+        { dias: '[PACK 2 DÍAS] Martes y Jueves', horario: '18:30-19:00', precio: '50€' },
+        { dias: '[1 DÍA] Lunes', horario: '18:00-18:30', precio: '37€' },
+        { dias: '[1 DÍA] Martes', horario: '18:30-19:00', precio: '37€' },
+        { dias: '[1 DÍA] Miércoles', horario: '18:00-18:30', precio: '37€' },
+        { dias: '[1 DÍA] Jueves', horario: '18:30-19:00', precio: '37€' },
+        { dias: '[1 DÍA] Viernes', horario: '18:00-18:30', precio: '37€' }
+    ]
   },
   {
-    id: 'aquagym',
-    nombre: '💧 Aquagym (17:30 - 18:15)',
-    cursos: ['ADULTO', '1BACH', '2BACH'],
-    requierePrueba: false,
-    diasResumen: 'M y J',
-    precioResumen: '50€/mes',
-    descripcion: '🌊 Actividad acuática de bajo impacto ideal para mantenerse en forma sin sobrecargar las articulaciones.\n⏰ Martes y jueves de 17:30 - 18:15.',
-    aviso: '⚠️ Mínimo 5 alumnos.',
+    id: 'eso_bach', 
+    nombre: '🎓 ESO/Bachillerato', 
+    cursos: ['1ESO', '2ESO', '3ESO', '4ESO', '1BACH', '2BACH'], 
+    requierePrueba: true, 
+    diasResumen: 'L/X o V', 
+    precioResumen: '37€ / 50€', 
+    descripcion: 'Sesiones específicas para adolescentes, con técnica, mantenimiento o preparación física.\n\n⬇️ ELIGE TU OPCIÓN ⬇️\n⭐ PACK 2 DÍAS (50€): Tardes.\n⭐ DÍA SUELTO (37€): Tarde o Mediodía.', 
+    aviso: 'Mínimo 4 alumnos.',
     opciones: [
-      { dias: 'Martes y Jueves', horario: '17:30 - 18:15', precio: '50€/mes' },
-    ],
-  },
-  {
-    id: 'nado_libre',
-    nombre: '🧘 Nado Libre (18:30 - 19:00)',
-    cursos: ['ADULTO', '1BACH', '2BACH'],
-    requierePrueba: false,
-    diasResumen: 'L, X, V',
-    precioResumen: 'Desde 25€',
-    descripcion: '🎧 Sin monitor, para jóvenes y adultos que prefieren nadar a su ritmo. 🌙 Ideal para relajarse al final del día.\n⏰ Lunes, Miércoles y Viernes de 18:30 a 19:00.',
-    aviso: '⚠️ Mínimo 2 alumnos.',
-    opciones: [
-      { dias: 'Lunes y Miércoles', horario: '18:30 - 19:00', precio: '35€/mes' },
-      { dias: 'Solo Lunes', horario: '18:30 - 19:00', precio: '25€/mes' },
-      { dias: 'Solo Miércoles', horario: '18:30 - 19:00', precio: '25€/mes' },
-      { dias: 'Solo Viernes', horario: '18:30 - 19:00', precio: '25€/mes' },
-    ],
-  },
+        { dias: '[PACK 2 DÍAS] Lunes y Miércoles', horario: '18:30-19:00', precio: '50€' },
+        { dias: '[1 DÍA] Lunes', horario: '18:30-19:00', precio: '37€' },
+        { dias: '[1 DÍA] Miércoles', horario: '18:30-19:00', precio: '37€' },
+        { dias: '[1 DÍA] Viernes', horario: '14:15-15:00', precio: '37€' }
+    ]
+  }
 ];
 
 // ==========================================
@@ -281,7 +268,7 @@ const enviarEmailConfirmacion = async (email, alumno, cita) => {
   }
 };
 // ==========================================
-// 🏠 PÁGINA PÚBLICA (LANDING PAGE - OFICIAL)
+// 🏠 LANDING PAGE (VERSIÓN COMPLETA Y DETALLADA)
 // ==========================================
 const LandingPage = ({ setView }) => {
   const [tab, setTab] = useState('actividades');
@@ -294,17 +281,23 @@ const LandingPage = ({ setView }) => {
           <div className="absolute inset-0 bg-black/40 z-10"></div>
           <img src={IMG_PRINCIPAL} className="w-full h-full object-cover z-0" alt="Piscina" />
         </div>
-        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
+        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
           <img src={IMG_ESCUDO} className="h-28 mx-auto mb-6 drop-shadow-2xl" alt="Escudo" />
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-md">
             Escuela de Natación <br /> San Buenaventura
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 drop-shadow-sm opacity-90">
-            Deporte, Salud y Educación en el agua
+          
+          {/* 👇 AQUÍ ESTÁN LAS FRASES QUE FALTABAN 👇 */}
+          <p className="text-xl md:text-2xl font-light mb-2 drop-shadow-sm opacity-90">
+            Deporte, salud y educación en el agua
           </p>
+          <p className="text-xs md:text-sm italic text-gray-200 mb-8 max-w-2xl border-t border-white/30 pt-2">
+            "Estas actividades tienen carácter voluntario, no discriminatorio y no lucrativo"
+          </p>
+
           <button
             onClick={() => setView('login')}
-            className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-lg mt-6 transform hover:scale-105"
+            className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-lg mt-2 transform hover:scale-105"
           >
             Acceder al Área Privada
           </button>
@@ -332,11 +325,12 @@ const LandingPage = ({ setView }) => {
       <div className="flex-1 bg-gray-50 py-10">
         <div className="max-w-6xl mx-auto px-6">
           
-          {/* VISTA ACTIVIDADES */}
+          {/* VISTA ACTIVIDADES (CON TARJETAS AZULES COMPLETAS) */}
           {tab === 'actividades' && (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
               {OFERTA_ACTIVIDADES.map((act) => (
                 <div key={act.id} className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col hover:shadow-xl transition-shadow">
+                  {/* Encabezado Azul */}
                   <div className="bg-blue-600 p-4 relative">
                     <h3 className="text-white font-bold text-lg pr-8">{act.nombre}</h3>
                     <div className="flex flex-wrap gap-2 mt-2">
@@ -344,22 +338,25 @@ const LandingPage = ({ setView }) => {
                         📅 {act.diasResumen}
                       </span>
                       {act.requierePrueba && (
-  <span className="bg-red-500 text-white text-[10px] md:text-xs px-2 py-1 rounded font-bold shadow-sm animate-pulse whitespace-nowrap">
-    ❗ Requiere Prueba de Nivel
-  </span>
-)}
+                        <span className="bg-red-500 text-white text-[10px] md:text-xs px-2 py-1 rounded font-bold shadow-sm animate-pulse whitespace-nowrap">
+                          ❗ Requiere Prueba de nivel
+                        </span>
+                      )}
                     </div>
                   </div>
+                  {/* Cuerpo de la tarjeta */}
                   <div className="p-5 flex-1 flex flex-col">
                     <p className="text-gray-600 text-sm mb-4 flex-1 whitespace-pre-line leading-relaxed">
                       {act.descripcion}
                     </p>
+                    {/* Aviso amarillo */}
                     <div className="bg-yellow-50 border border-yellow-200 p-3 rounded text-xs text-yellow-800 mb-4 font-medium flex gap-2">
                       <span>⚠️</span>
                       <span>{act.aviso}</span>
                     </div>
-                    {/* AQUI HEMOS QUITADO EL LISTADO DE PRECIOS */}
-                    <div className="border-t pt-3 mt-auto flex justify-end">
+                    {/* Precio al final */}
+                    <div className="border-t pt-3 mt-auto flex justify-end items-center">
+                       <span className="text-xs text-gray-400 mr-2">Precio:</span>
                        <p className="text-2xl font-black text-blue-600">{act.precioResumen}</p>
                     </div>
                   </div>
@@ -368,7 +365,7 @@ const LandingPage = ({ setView }) => {
             </div>
           )}
 
-          {/* VISTA INFO COMPLETA */}
+          {/* VISTA INFO COMPLETA (TEXTOS LARGOS RECUPERADOS) */}
           {tab === 'info' && (
             <div className="space-y-10 animate-fade-in">
                {/* MAPA */}
@@ -380,19 +377,19 @@ const LandingPage = ({ setView }) => {
                   <p className="text-center text-xs text-gray-500 mt-2">Acceso por el portón azul al final del patio.</p>
                </div>
 
-              {/* MATERIAL */}
+              {/* MATERIAL NECESARIO */}
               <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
                 <div className="bg-blue-600 p-4 text-white font-bold text-lg flex items-center gap-2">🎒 Material Necesario</div>
-                <div className="p-6 grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div className="flex items-center gap-3"><span className="text-3xl">👙</span> <span className="font-bold text-gray-700">Bañador</span></div>
-                  <div className="flex items-center gap-3"><span className="text-3xl">🧼</span> <span className="font-bold text-gray-700">Toalla (oblig)</span></div>
-                  <div className="flex items-center gap-3"><span className="text-3xl">🥽</span> <span className="font-bold text-gray-700">Gafas</span></div>
-                  <div className="flex items-center gap-3"><span className="text-3xl">🎩</span> <span className="font-bold text-gray-700">Gorro</span></div>
-                  <div className="flex items-center gap-3"><span className="text-3xl">🩴</span> <span className="font-bold text-gray-700">Chanclas</span></div>
+                <div className="p-6 grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                  <div className="flex flex-col items-center"><span className="text-3xl mb-2">👙</span> <span className="font-bold text-gray-700">Bañador</span></div>
+                  <div className="flex flex-col items-center"><span className="text-3xl mb-2">🧼</span> <span className="font-bold text-gray-700">Toalla</span></div>
+                  <div className="flex flex-col items-center"><span className="text-3xl mb-2">🥽</span> <span className="font-bold text-gray-700">Gafas</span></div>
+                  <div className="flex flex-col items-center"><span className="text-3xl mb-2">🎩</span> <span className="font-bold text-gray-700">Gorro</span></div>
+                  <div className="flex flex-col items-center"><span className="text-3xl mb-2">🩴</span> <span className="font-bold text-gray-700">Chanclas</span></div>
                 </div>
               </div>
 
-              {/* RECOGIDA ALUMNOS */}
+              {/* RECOGIDA ALUMNOS (TEXTOS COMPLETOS) */}
               <div className="grid md:grid-cols-1 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-400">
                   <h4 className="font-bold text-lg mb-2 text-blue-900">👶 Infantil</h4>
@@ -408,7 +405,7 @@ const LandingPage = ({ setView }) => {
                 </div>
               </div>
 
-              {/* AVISOS, AMPLIACIÓN Y NORMATIVA */}
+              {/* AVISOS Y AMPLIACIÓN */}
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <ul className="space-y-4 text-gray-700 text-sm">
                   <li className="flex gap-4">
@@ -467,7 +464,7 @@ const LandingPage = ({ setView }) => {
 };
 
 // ==========================================
-// 🛡️ ADMIN DASHBOARD (FINAL: DÍAS VISIBLES + ETIQUETAS)
+// 🛡️ ADMIN DASHBOARD (SOLUCIÓN: PRUEBAS RESERVADAS + INSCRITOS SIN VALIDAR)
 // ==========================================
 const AdminDashboard = ({ userRole, logout, userEmail }) => {
   const [alumnos, setAlumnos] = useState([]);
@@ -509,17 +506,22 @@ const AdminDashboard = ({ userRole, logout, userEmail }) => {
   const listadoGlobal = alumnos.filter(a => {
       const coincideNombre = (a.nombre || '').toLowerCase().includes(busqueda.toLowerCase());
       const coincideGrupo = filtroGrupo ? a.actividad === filtroGrupo : true;
-      // Mostramos todo salvo perfiles vacíos borrados
       const esRelevante = a.estado !== 'sin_inscripcion' || a.actividad; 
       return coincideNombre && coincideGrupo && esRelevante;
   });
 
-  // 2. LISTA PRUEBAS (PENDIENTES DE VALIDAR)
+  // 2. LISTA PRUEBAS (CORRECCIÓN: DETECTA A LOS "FALSOS INSCRITOS")
   const listadoPruebas = alumnos.filter(a => {
+      // Regla 0: Si es baja o antiguo alumno, fuera.
       if (a.estado === 'baja_pendiente' || a.esAntiguoAlumno) return false;
+
+      // Regla 1: Estado explícito de prueba
       const esPruebaOficial = a.estado === 'prueba_reservada';
-      // Detectamos "Falsos Inscritos" (tienen plaza pero no han sido validados por Admin)
+      
+      // Regla 2: El caso del error -> Está 'inscrito' Y tiene cita Y NO ha sido validado por el admin aun
+      // (Usamos la propiedad 'validadoAdmin' para marcar los que ya revisaste)
       const esFalsoInscrito = a.estado === 'inscrito' && a.citaNivel && !a.validadoAdmin;
+
       return esPruebaOficial || esFalsoInscrito;
   });
 
@@ -533,13 +535,14 @@ const AdminDashboard = ({ userRole, logout, userEmail }) => {
   
   const validarPlaza = async (alumno) => {
       if (userRole !== 'admin') return alert("⛔ Solo coordinadores.");
+      
       const grupoFinal = alumno.actividad || "GRUPO A DETERMINAR (Editar)";
       
-      if (confirm(`✅ ¿VALIDAR PLAZA?\n\nAlumno: ${alumno.nombre}\nGrupo: ${grupoFinal}\nHorario: ${alumno.dias || '?'} ${alumno.horario || ''}`)) {
+      if (confirm(`✅ ¿VALIDAR PLAZA?\n\nAlumno: ${alumno.nombre}\nGrupo: ${grupoFinal}\n\nSe confirmará su inscripción definitivamente.`)) {
           await updateDoc(doc(db, 'students', alumno.id), { 
               estado: 'inscrito',
               actividad: grupoFinal,
-              validadoAdmin: true 
+              validadoAdmin: true // <--- ESTA ES LA CLAVE: Lo marcamos para que salga de la lista de pruebas
           });
           alert("🎉 Alumno validado correctamente.");
       }
@@ -555,6 +558,7 @@ const AdminDashboard = ({ userRole, logout, userEmail }) => {
       }
   };
 
+  // Auxiliares
   const borrarAlumno = async (id) => { if (userRole !== 'admin') return; if(confirm('⚠️ ¿Borrar definitivamente?')) await deleteDoc(doc(db, 'students', id)); }
   const agregarAviso = async (e) => { e.preventDefault(); if (!nuevoAviso) return; await addDoc(collection(db, 'avisos'), { texto: nuevoAviso, fecha: new Date().toISOString() }); setNuevoAviso(''); };
   const borrarAviso = async (id) => { if (confirm('¿Borrar aviso?')) await deleteDoc(doc(db, 'avisos', id)); };
@@ -563,15 +567,18 @@ const AdminDashboard = ({ userRole, logout, userEmail }) => {
   const getFinDeMes = (fecha) => { if(!fecha) return "-"; const d = new Date(fecha); return new Date(d.getFullYear(), d.getMonth() + 1, 0).toLocaleDateString(); };
   
   const descargarExcel = () => {
-    const cabecera = ['Alumno,Estado,Grupo,Día,Horario,Pagador\n'];
-    const filas = listadoGlobal.map(a => `"${a.nombre}","${a.estado}","${a.actividad||'-'}","${a.dias||''}","${a.horario||''}","${padres[a.parentId]?.nombrePagador||''}"`);
-    const link = document.createElement("a"); link.href = "data:text/csv;charset=utf-8," + encodeURI(cabecera + filas.join("\n")); link.download = "listado_completo.csv"; link.click();
+    const cabecera = ['Alumno,Estado,Grupo,Pagador\n'];
+    const filas = listadoGlobal.map(a => `"${a.nombre}","${a.estado}","${a.actividad||'-'}","${padres[a.parentId]?.nombrePagador||''}"`);
+    const link = document.createElement("a"); link.href = "data:text/csv;charset=utf-8," + encodeURI(cabecera + filas.join("\n")); link.download = "listado.csv"; link.click();
   };
 
   return (
     <div className="min-h-screen bg-gray-100 p-6 font-sans">
       <div className="flex justify-between items-center mb-6 bg-white p-4 rounded shadow">
-        <div><h1 className="text-xl font-bold text-gray-800">Panel de Gestión</h1><p className="text-xs text-gray-500">{userEmail} ({soySuperAdmin ? 'Super Admin' : userRole})</p></div>
+        <div>
+            <h1 className="text-xl font-bold text-gray-800">Panel de Gestión</h1>
+            <p className="text-xs text-gray-500">{userEmail} ({soySuperAdmin ? 'Super Admin' : userRole})</p>
+        </div>
         <div className="flex gap-2">
             {userRole === 'admin' && <button onClick={descargarExcel} className="bg-green-600 text-white px-3 py-1 rounded text-sm font-bold">Excel</button>}
             <button onClick={logout} className="text-red-500 border border-red-200 px-3 py-1 rounded text-sm font-bold">Salir</button>
@@ -581,14 +588,20 @@ const AdminDashboard = ({ userRole, logout, userEmail }) => {
       <div className="flex gap-2 mb-6 border-b pb-2 overflow-x-auto">
           {['global', 'pruebas', 'bajas', 'equipo', 'avisos', 'alta_manual'].map(t => {
              if ((t === 'equipo' || t === 'alta_manual' || t === 'bajas') && userRole !== 'admin') return null;
+             
              let count = 0;
              if (t === 'pruebas') count = listadoPruebas.length;
              if (t === 'bajas') count = listadoBajas.length;
-             return (<button key={t} onClick={() => setTab(t)} className={`px-4 py-2 font-bold uppercase text-sm whitespace-nowrap flex items-center gap-2 ${tab === t ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}>{t.replace('_', ' ')}{count > 0 && <span className="bg-red-500 text-white text-[10px] px-1.5 rounded-full">{count}</span>}</button>);
+
+             return (
+                <button key={t} onClick={() => setTab(t)} className={`px-4 py-2 font-bold uppercase text-sm whitespace-nowrap flex items-center gap-2 ${tab === t ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}>
+                    {t.replace('_', ' ')}
+                    {count > 0 && <span className="bg-red-500 text-white text-[10px] px-1.5 rounded-full">{count}</span>}
+                </button>
+             );
           })}
       </div>
 
-      {/* 1. GLOBAL */}
       {tab === 'global' && (
           <div className="bg-white rounded shadow overflow-hidden">
               <div className="p-4 border-b bg-gray-50 flex flex-col md:flex-row gap-4">
@@ -599,64 +612,39 @@ const AdminDashboard = ({ userRole, logout, userEmail }) => {
                   </select>
               </div>
               <table className="w-full text-sm text-left">
-                  <thead className="bg-gray-100 uppercase text-xs"><tr><th className="p-3">Alumno</th><th className="p-3">Actividad / Horario</th><th className="p-3 text-right">Acción</th></tr></thead>
+                  <thead className="bg-gray-100 uppercase text-xs"><tr><th className="p-3">Alumno</th><th className="p-3">Grupo</th><th className="p-3 text-right">Acción</th></tr></thead>
                   <tbody>
-                      {listadoGlobal.length > 0 ? listadoGlobal.map(a => {
-                          const esPendiente = (a.estado === 'inscrito' && !a.validadoAdmin) || a.estado === 'prueba_reservada';
-                          
-                          return (
-                              <tr key={a.id} className={`border-b ${a.estado === 'baja_pendiente' ? 'bg-red-50' : 'hover:bg-gray-50'}`}>
-                                  <td className="p-3 font-bold">
-                                      {a.nombre} 
-                                      {a.estado === 'baja_pendiente' && <span className="text-[10px] bg-red-100 text-red-600 px-1 rounded ml-1">BAJA</span>}
-                                      <br/><span className="text-gray-400 text-xs">{a.curso}</span>
-                                  </td>
-                                  <td className="p-3">
-                                      <div className="font-bold text-blue-900 text-sm">{a.actividad || '-'}</div>
-                                      
-                                      {/* ETIQUETA AMARILLA SI NO HA HECHO PRUEBA */}
-                                      {esPendiente && (
-                                          <div className="my-1">
-                                              <span className="bg-yellow-100 text-yellow-800 text-[10px] px-2 py-0.5 rounded border border-yellow-300 font-bold">
-                                                  ⏳ Falta Prueba / Validar
-                                              </span>
-                                          </div>
-                                      )}
-                                      
-                                      {/* DÍAS Y HORAS SIEMPRE VISIBLES */}
-                                      {(a.dias || a.horario) && (
-                                          <div className="text-xs text-gray-600 font-medium mt-1">
-                                              📅 {a.dias} • ⏰ {a.horario}
-                                          </div>
-                                      )}
-                                  </td>
-                                  <td className="p-3 text-right">{userRole === 'admin' && <button onClick={() => borrarAlumno(a.id)} className="text-red-400 hover:text-red-600 p-2">🗑️</button>}</td>
-                              </tr>
-                          );
-                      }) : <tr><td colSpan="3" className="p-8 text-center text-gray-400">No hay resultados.</td></tr>}
+                      {listadoGlobal.length > 0 ? listadoGlobal.map(a => (
+                          <tr key={a.id} className={`border-b ${a.estado === 'baja_pendiente' ? 'bg-red-50' : 'hover:bg-gray-50'}`}>
+                              <td className="p-3 font-bold">{a.nombre} {a.estado === 'baja_pendiente' && <span className="text-[10px] bg-red-100 text-red-600 px-1 rounded ml-1">BAJA</span>}<br/><span className="text-gray-400 text-xs">{a.curso}</span></td>
+                              <td className="p-3">{a.actividad || '-'}</td>
+                              <td className="p-3 text-right">{userRole === 'admin' && <button onClick={() => borrarAlumno(a.id)} className="text-red-400 hover:text-red-600 p-2">🗑️</button>}</td>
+                          </tr>
+                      )) : <tr><td colSpan="3" className="p-8 text-center text-gray-400">No hay resultados.</td></tr>}
                   </tbody>
               </table>
           </div>
       )}
 
-      {/* 2. PRUEBAS */}
       {tab === 'pruebas' && (
           <div className="bg-white rounded shadow overflow-hidden">
-              <div className="p-3 bg-blue-50 text-blue-800 text-xs font-bold border-b">ℹ️ Validar Plazas: Alumnos pendientes de prueba o confirmación.</div>
+              <div className="p-3 bg-blue-50 text-blue-800 text-xs font-bold border-b">
+                  ℹ️ Validar Plazas: Alumnos con cita de nivel o pendientes de confirmación.
+              </div>
               <table className="w-full text-sm text-left">
-                  <thead className="bg-gray-100 uppercase text-xs"><tr><th className="p-3">Cita</th><th className="p-3">Alumno</th><th className="p-3">Solicita (Día/Hora)</th><th className="p-3 text-right">Validar</th></tr></thead>
+                  <thead className="bg-gray-100 uppercase text-xs"><tr><th className="p-3">Cita</th><th className="p-3">Alumno</th><th className="p-3">Solicita</th><th className="p-3 text-right">Validar</th></tr></thead>
                   <tbody>
                       {listadoPruebas.length > 0 ? listadoPruebas.map(a => (
                           <tr key={a.id} className="hover:bg-orange-50">
                               <td className="p-3 text-blue-600 font-bold">{a.citaNivel || 'Sin hora'}</td>
-                              <td className="p-3 font-bold">{a.nombre}<br/><span className="text-xs font-normal text-gray-400">Estado: {a.estado}</span></td>
-                              
-                              <td className="p-3">
-                                  <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-bold block w-fit mb-1">{a.actividad || 'Sin elegir'}</span>
-                                  {/* AQUÍ TAMBIÉN SALE EL DÍA Y HORA */}
-                                  {(a.dias || a.horario) && <div className="text-xs text-gray-600 font-bold">{a.dias} - {a.horario}</div>}
+                              <td className="p-3 font-bold">
+                                  {a.nombre}
+                                  {/* Debug para que veas por qué salen */}
+                                  <div className="text-[10px] text-gray-400 font-normal">
+                                      {a.estado === 'inscrito' ? 'Pre-inscrito (Falta Validar)' : 'Reserva Prueba'}
+                                  </div>
                               </td>
-                              
+                              <td className="p-3"><span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-bold">{a.actividad || 'Sin elegir'}</span></td>
                               <td className="p-3 text-right"><button onClick={() => validarPlaza(a)} className="bg-green-500 text-white px-3 py-1 rounded font-bold text-xs shadow hover:bg-green-600">✅ Aceptar</button></td>
                           </tr>
                       )) : <tr><td colSpan="4" className="p-6 text-center text-gray-400">Todo validado.</td></tr>}
@@ -665,7 +653,6 @@ const AdminDashboard = ({ userRole, logout, userEmail }) => {
           </div>
       )}
 
-      {/* 3. BAJAS */}
       {tab === 'bajas' && (
           <div className="bg-white rounded shadow overflow-hidden">
               <div className="p-3 bg-red-50 text-red-800 text-xs font-bold border-b">ℹ️ Bajas solicitadas (Pendientes de finalizar).</div>
