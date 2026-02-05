@@ -149,7 +149,7 @@ const OFERTA_ACTIVIDADES = [
   },
   {
     id: 'waterpolo', 
-    nombre: '🤽‍♂️ Waterpolo (17:30-18:30)', 
+    nombre: '🤽‍♂️ Waterpolo 3º-6º Prim (17:30-18:30)', 
     cursos: ['3PRI', '4PRI', '5PRI', '6PRI'], 
     requierePrueba: false, 
     diasResumen: 'L-V', 
