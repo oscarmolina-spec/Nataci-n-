@@ -34,7 +34,7 @@ const CAPACIDAD_POR_HUECO = 2;
 // ==========================================
 // 🖼️ BANCO DE IMÁGENES
 // ==========================================
-const IMG_ESCUDO = 'https://i.ibb.co/JRz06Sym/San-uenaventura.png';
+const IMG_ESCUDO = 'https://i.ibb.co/v6gvHDfv/logo-BLANCO.png';
 const IMG_PRINCIPAL = 'https://i.ibb.co/HLt30jVK/20241210-084606.jpg';
 const IMG_GALERIA_1 = 'https://i.ibb.co/hJxW45tC/20241210-084225.jpg';
 const IMG_GALERIA_2 = 'https://i.ibb.co/mrJHGscm/Screenshot-2025-05-09-15-04-17.png';
@@ -457,7 +457,7 @@ const LandingPage = ({ setView }) => {
       
       {/* FOOTER */}
       <footer className="bg-gray-900 text-white py-8 text-center text-sm text-gray-400">
-        <p>© 2025 Colegio San Buenaventura - Escuela de Natación</p>
+        <p>© 2026 Colegio San Buenaventura - Escuela de Natación</p>
       </footer>
     </div>
   );
@@ -1230,7 +1230,7 @@ const Login = ({ setView }) => {
 
     // 2. Validaciones Alumno
     if (!regData.nombreAlumno) return alert('⚠️ Falta el NOMBRE del alumno.');
-    if (!regData.fechaNacimiento) return alert('⚠️ Falta la FECHA DE NACIMIENTO.');
+    if (!regData.fechaNacAlumno) return alert('⚠️ Falta la FECHA DE NACIMIENTO.');
 
     // 3. Validaciones Específicas
     if (regData.tipo === 'externo') {
